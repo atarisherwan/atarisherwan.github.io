@@ -1,0 +1,4 @@
+Exploit-chain source files in this folder are derived from the WebKitty source archive supplied by the user.
+Upstream project: WebKitty / ArabPixel and credited contributors listed in the upstream README.
+Upstream license: AGPL-3.0-or-later. Preserve the applicable license and source/attribution requirements when redistributing modified versions.
+Local changes in this prepared package are limited to runtime resource paths needed for hosting under a GitHub Pages project subdirectory, plus the ATARI SHERWAN runner/cache files.
