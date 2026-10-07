@@ -1,0 +1,15 @@
+ATARI SHERWAN PS4 HOST
+SOURCE / THIRD-PARTY NOTICE
+
+This repository contains a static PS4 browser website shell and firmware-organized resources maintained for the ATARI SHERWAN shop website.
+
+Some firmware-specific source files in the repository are derived from third-party upstream projects. Preserve all upstream copyright, source-code, attribution, and license requirements that apply to those files.
+
+Local website-shell changes include the landing page, firmware-family display, static hosting paths, cache manifest, source links, notices, and deployment notes.
+
+Binary payloads and other third-party components retain the rights, terms, and trademarks of their respective upstream owners and are not relicensed by this notice.
+
+PlayStation and PS4 are trademarks of Sony Interactive Entertainment. This project is not affiliated with or endorsed by Sony Interactive Entertainment.
+
+Corresponding source for this hosted version:
+https://github.com/atarisherwan/l

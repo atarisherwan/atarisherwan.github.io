@@ -1,0 +1,52 @@
+ATARI SHERWAN - ڕێنمایی کورت بۆ GitHub Pages
+
+١) تا پشکنینی کۆتایی تەواو نەبووە GitHub Pages چالاک مەکە.
+
+٢) ئەم ZIP ـە بکەرەوە. تەنها فایلەکانی ناوی ZIP ـەکە بخەرە ROOT ـی repo ـەکەت.
+   خودی فۆڵدەری ZIP یان ناوی atari_sherwan_root_ready مەخەرە ناو GitHub.
+
+٣) فایلەکانی fw9x / fw10x / fw11x / fw12x / fw13x کە ئێستا لە repo ـەکەت هەن مەسڕەوە.
+
+٤) atari_sherwan.png ئێستا لە repo ـەکەت هەیە؛ هەر لە root بمێنێتەوە.
+
+٥) پاش upload، root دەبێت لانی کەم ئەمانەی تێدا بێت:
+   index.html
+   cache.appcache
+   LICENSE
+   SOURCE-NOTICE.txt
+   SETUP-KURDISH.txt
+   .nojekyll
+   atari_sherwan.png
+   fw9x/
+   fw10x/
+   fw11x/
+   fw12x/
+   fw13x/
+
+٦) index.html firmware ـی PS4 بە شێوەی خۆکار پیشان دەدات.
+   ئەم پەڕەیە هیچ launch/exploit button ـێک زیاد ناکات.
+
+٧) cache.appcache تەنها پەڕە و asset ـە گشتییەکانی root cache دەکات.
+   هەر جار index.html یان asset ـێکی cache کراو دەگۆڕیت،
+   version ـی ناو cache.appcache زیاد بکە.
+   نموونە:
+   # ATARI SHERWAN ROOT CACHE v2
+
+٨) پێش بڵاوکردنەوەی گشتی:
+   - لەسەر PS4 ـی ڕاستەقینە index.html تاقی بکەرەوە.
+   - دڵنیابە firmware دروست دەناسێتەوە.
+   - دڵنیابە وێنە و فایلەکانی root 404 نادەن.
+   - یەک جار بە ئینتەرنێت سایتەکە بکەرەوە.
+   - پاشان ئینتەرنێت بکوژێنەوە و دڵنیابە landing page لە cache دەکرێتەوە.
+
+٩) کاتێک هەموو پشکنینەکان تەواو بوون:
+   GitHub > Settings > Pages
+   Source: Deploy from a branch
+   Branch: main
+   Folder: / (root)
+   Save
+
+١٠) فایلەکانی LICENSE و SOURCE-NOTICE.txt مەسڕەوە.
+
+Source repository:
+https://github.com/atarisherwan/l
