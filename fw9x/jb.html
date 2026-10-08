@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATARI SHERWAN | GoldHEN 9.x</title>
+<style>html,body{margin:0;padding:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;min-height:100%}#wrap{padding:18px}#brand{color:#ffd21a;font-size:16px;font-weight:800;margin-bottom:12px}#state{color:#ffd21a;font-size:22px;font-weight:800;margin-bottom:12px}#console{white-space:pre-wrap;font:12px/1.45 monospace;color:#ddd;max-height:78vh;overflow:auto}.ok{color:#7fd0a0}.bad{color:#ff7777}</style>
+</head><body><div id="wrap"><div id="brand">ATARI SHERWAN</div><div id="state">DETECTING FIRMWARE...</div><pre id="console"></pre></div><script>(function(){
+if(!/(?:^|[?&])go=1(?:&|$)/.test(location.search)){location.replace('../');return;}
+try{history.replaceState(null,null,'jb.html');}catch(e){}
+window.user={currentJbFlavor:'GoldHEN'};window.jailbreakSuccess=function(){var s=document.getElementById('state');s.textContent='GOLDHEN LOADED';s.className='ok';};window.updateJbStats=function(){};sessionStorage.setItem('payload_path','goldhen.bin');
+function f(){var m=/PlayStation\s+4[\/\s]+(\d+)\.(\d+)/i.exec(navigator.userAgent||'');if(!m)return null;var x=String(m[2]);if(x.length===1)x='0'+x;if(x.length>2)x=x.slice(0,2);return m[1]+'.'+x;}
+var v=f(),ok=['9.00','9.03','9.04','9.50','9.51','9.60'],st=document.getElementById('state');if(!v){st.textContent='PS4 NOT DETECTED';st.className='bad';return;}if(ok.indexOf(v)<0){st.textContent='UNSUPPORTED FW '+v;st.className='bad';return;}st.textContent='LOADING GOLDHEN '+v+'...';var s=document.createElement('script');s.src='bundle.js';s.onload=function(){if(typeof doJailBreak==='function')doJailBreak();else{st.textContent='FAILED TO START';st.className='bad';}};s.onerror=function(){st.textContent='FAILED TO LOAD BUNDLE';st.className='bad';};document.body.appendChild(s);
+})();</script></body></html>
