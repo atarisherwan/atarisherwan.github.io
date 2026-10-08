@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en" manifest="cache.appcache"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ATARI SHERWAN | GoldHEN 11.x</title><style>html,body{margin:0;padding:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;min-height:100%}#wrap{padding:16px}#state{color:#ffd21a;font-size:20px;font-weight:800;margin-bottom:10px}#DebugConsole{max-height:80vh;overflow:auto}#console{white-space:pre-wrap;font:12px/1.45 monospace;color:#ddd}.ok{color:#7fd0a0}.bad{color:#ff7777}</style></head><body><div id="wrap"><div id="state">DETECTING FIRMWARE...</div><div id="DebugConsole"><pre id="console"></pre></div></div><script>
+(function(){
+  if(location.hash!=='#atari'){location.replace('../');return;}
+  try{history.replaceState(null,'',location.pathname);}catch(e){location.hash='';}
+
+window.jailbreakSuccess=function(){document.getElementById('state').textContent='GOLDHEN LOADED';document.getElementById('state').className='ok';};
+sessionStorage.setItem('payload_path','goldhen.bin');
+function getFW(){var m=/PlayStation\s+4[\/\s]+(\d+)\.(\d+)/i.exec(navigator.userAgent||'');if(!m)return null;var minor=String(m[2]);if(minor.length===1)minor='0'+minor;if(minor.length>2)minor=minor.slice(0,2);return m[1]+'.'+minor;}
+(function(){var fw=getFW(),st=document.getElementById('state');if(!fw){st.textContent='PS4 NOT DETECTED';st.className='bad';return;}if(fw==='11.00'||fw==='11.02'){localStorage.setItem('exploitChain','4');st.textContent='LOADING GOLDHEN '+fw+'...';var s=document.createElement('script');s.src='src/cssfontface/main.js';s.onload=function(){doCssFontFaceJailbreak();};s.onerror=function(){st.textContent='FAILED TO LOAD CSSFONTFACE';st.className='bad';};document.body.appendChild(s);return;}if(fw==='11.50'||fw==='11.52'){st.textContent='LOADING GOLDHEN '+fw+'...';var s=document.createElement('script');s.type='module';s.src='slopkit/chain_lapse.js';s.onerror=function(){st.textContent='FAILED TO LOAD SLOPKIT';st.className='bad';};document.body.appendChild(s);return;}st.textContent='UNSUPPORTED FW '+fw;st.className='bad';})();
+})();
+</script></body></html>
