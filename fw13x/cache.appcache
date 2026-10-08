@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# ATARI SHERWAN FW13X CACHE v5-20261008-CACHE-READY
+CACHE:
+jb.html
+goldhen.bin
+slopkit/chain_poops.js
+slopkit/core.js
+slopkit/core.js?v=10
+slopkit/int64.js
+slopkit/mem.js
+slopkit/ps4_offsets.js
+slopkit/rpc_worker.js
+slopkit/patches/1300.bin
+relapse/jb.js
+relapse/core.js
+relapse/core.js?v=10
+relapse/int64.js
+relapse/mem.js
+relapse/ps4_offsets.js
+relapse/rpc_worker.js
+relapse/patches/1302.bin
+relapse/patches/1350.bin
+relapse/patches/1352.bin
+NETWORK:
+*
