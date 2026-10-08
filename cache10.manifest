@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# ATARI SHERWAN GAMERHACK-STYLE FINAL FW10 20261008-v1
+
+CACHE:
+index.html
+atari_sherwan_bg.jpg
+fw10x/jb.html
+fw10x/jb.html?go=1
+fw10x/goldhen.bin
+fw10x/src/cssfontface/main.js
+fw10x/src/cssfontface/misc.js
+fw10x/src/cssfontface/loader.js
+fw10x/src/cssfontface/workers.js
+fw10x/src/cssfontface/worker.js
+fw10x/src/cssfontface/lapse.js
+fw10x/src/cssfontface/netctrl.js
+fw10x/src/cssfontface/ps4/constants.js
+fw10x/src/cssfontface/ps4/userland.js
+fw10x/src/cssfontface/ps4/kernel.js
+fw10x/src/cssfontface/ps4/patches/1000.bin
+fw10x/src/cssfontface/ps4/patches/1050.bin
+
+NETWORK:
+*

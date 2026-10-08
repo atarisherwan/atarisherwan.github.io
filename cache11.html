@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache11.manifest"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>ATARI SHERWAN | Offline Cache</title><style>
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#000;font-family:Arial,Helvetica,sans-serif}
+body{background:#000 url('atari_sherwan_bg.jpg') center center/cover no-repeat;color:#fff}
+.box{position:fixed;left:5%;right:5%;bottom:8vh;text-align:center;background:rgba(0,0,0,.80);border:2px solid #ffd21a;border-radius:18px;padding:22px}
+.brand{color:#ffd21a;font-size:26px;font-weight:900;letter-spacing:1px}#msgs{margin-top:14px;font-size:20px;font-weight:700}.small{margin-top:10px;font-size:14px;color:#ddd}
+</style></head><body><div class="box"><div class="brand">ATARI SHERWAN</div><div id="msgs">STARTING OFFLINE CACHE...</div><div class="small">Keep Internet connected until 100%.</div></div>
+<script>
+(function(){
+try{history.replaceState(null,null,'index.html');}catch(e){}
+var m=document.getElementById('msgs');
+function p(e){if(e&&e.total){m.textContent='INSTALLING OFFLINE CACHE: '+Math.round(e.loaded/e.total*100)+'%';}else m.textContent='INSTALLING OFFLINE CACHE...';}
+function ok(){m.textContent='CACHE INSTALLED SUCCESSFULLY ✔';setTimeout(function(){m.textContent='NOW CLOSE AND RE-OPEN THE BROWSER';},1500);}
+function bad(){m.textContent='CACHE INSTALL ERROR - CLEAR WEBSITE DATA AND TRY AGAIN';}
+try{window.applicationCache.addEventListener('progress',p,false);window.applicationCache.addEventListener('cached',ok,false);window.applicationCache.addEventListener('updateready',ok,false);window.applicationCache.addEventListener('error',bad,false);}catch(e){bad();}
+})();
+</script></body></html>

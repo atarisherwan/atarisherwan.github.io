@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# ATARI SHERWAN GAMERHACK-STYLE FINAL FW12 20261008-v1
+
+CACHE:
+index.html
+atari_sherwan_bg.jpg
+fw12x/jb.html
+fw12x/jb.html?go=1
+fw12x/goldhen.bin
+fw12x/slopkit/core.js
+fw12x/slopkit/core.js?v=10
+fw12x/slopkit/int64.js
+fw12x/slopkit/mem.js
+fw12x/slopkit/ps4_offsets.js
+fw12x/slopkit/rpc_worker.js
+fw12x/slopkit/chain_lapse.js
+fw12x/slopkit/chain_poops.js
+fw12x/slopkit/patches/1200.bin
+fw12x/slopkit/patches/1250.bin
+
+NETWORK:
+*

@@ -1,0 +1,8 @@
+ATARI SHERWAN
+
+Extract this ZIP.
+Select EVERYTHING inside this folder.
+Copy it to the ROOT of your atarisherwan.github.io repository.
+Choose REPLACE / OVERWRITE when asked.
+
+Do NOT delete your existing goldhen.bin, bundle.js, src, slopkit, relapse, or patch files.

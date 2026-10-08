@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# ATARI SHERWAN GAMERHACK-STYLE FINAL FW9 20261008-v1
+
+CACHE:
+index.html
+atari_sherwan_bg.jpg
+fw9x/jb.html
+fw9x/jb.html?go=1
+fw9x/bundle.js
+fw9x/goldhen.bin
+
+NETWORK:
+*

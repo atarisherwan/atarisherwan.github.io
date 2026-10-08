@@ -1,0 +1,32 @@
+CACHE MANIFEST
+# ATARI SHERWAN GAMERHACK-STYLE FINAL FW11 20261008-v1
+
+CACHE:
+index.html
+atari_sherwan_bg.jpg
+fw11x/jb.html
+fw11x/jb.html?go=1
+fw11x/goldhen.bin
+fw11x/src/cssfontface/main.js
+fw11x/src/cssfontface/misc.js
+fw11x/src/cssfontface/loader.js
+fw11x/src/cssfontface/workers.js
+fw11x/src/cssfontface/worker.js
+fw11x/src/cssfontface/lapse.js
+fw11x/src/cssfontface/netctrl.js
+fw11x/src/cssfontface/ps4/constants.js
+fw11x/src/cssfontface/ps4/userland.js
+fw11x/src/cssfontface/ps4/kernel.js
+fw11x/src/cssfontface/ps4/patches/1100.bin
+fw11x/src/cssfontface/ps4/patches/1102.bin
+fw11x/slopkit/core.js
+fw11x/slopkit/core.js?v=10
+fw11x/slopkit/int64.js
+fw11x/slopkit/mem.js
+fw11x/slopkit/ps4_offsets.js
+fw11x/slopkit/rpc_worker.js
+fw11x/slopkit/chain_lapse.js
+fw11x/slopkit/patches/1150.bin
+
+NETWORK:
+*

@@ -1,0 +1,30 @@
+CACHE MANIFEST
+# ATARI SHERWAN GAMERHACK-STYLE FINAL FW13 20261008-v1
+
+CACHE:
+index.html
+atari_sherwan_bg.jpg
+fw13x/jb.html
+fw13x/jb.html?go=1
+fw13x/goldhen.bin
+fw13x/slopkit/chain_poops.js
+fw13x/slopkit/core.js
+fw13x/slopkit/core.js?v=10
+fw13x/slopkit/int64.js
+fw13x/slopkit/mem.js
+fw13x/slopkit/ps4_offsets.js
+fw13x/slopkit/rpc_worker.js
+fw13x/slopkit/patches/1300.bin
+fw13x/relapse/jb.js
+fw13x/relapse/core.js
+fw13x/relapse/core.js?v=10
+fw13x/relapse/int64.js
+fw13x/relapse/mem.js
+fw13x/relapse/ps4_offsets.js
+fw13x/relapse/rpc_worker.js
+fw13x/relapse/patches/1302.bin
+fw13x/relapse/patches/1350.bin
+fw13x/relapse/patches/1352.bin
+
+NETWORK:
+*
