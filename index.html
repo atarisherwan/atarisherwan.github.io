@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" manifest="offline.manifest">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>ATARI SHERWAN</title>
+<style>
+html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#000;font-family:Arial,Helvetica,sans-serif}
+body{background:#000 url('atari_sherwan_bg.jpg') center center/cover no-repeat}
+.overlay{position:fixed;left:0;right:0;bottom:5.5vh;text-align:center}
+#start{width:72%;max-width:560px;min-height:72px;padding:18px 24px;border:2px solid #ffd21a;border-radius:18px;background:rgba(0,0,0,.78);color:#ffd21a;font-size:28px;font-weight:900}
+#start:disabled{opacity:.55}
+#msg{min-height:22px;margin-top:12px;color:#fff;font-size:15px}
+</style>
+</head>
+<body>
+<div class="overlay">
+<button id="start" disabled>PREPARING OFFLINE...</button>
+<div id="msg">INSTALLING OFFLINE CACHE...</div>
+</div>
+<script>
+(function(){
+var routes={'9.00':'fw9x','9.03':'fw9x','9.04':'fw9x','9.50':'fw9x','9.51':'fw9x','9.60':'fw9x','10.00':'fw10x','10.01':'fw10x','10.50':'fw10x','10.70':'fw10x','10.71':'fw10x','11.00':'fw11x','11.02':'fw11x','11.50':'fw11x','11.52':'fw11x','12.00':'fw12x','12.02':'fw12x','12.50':'fw12x','12.52':'fw12x','13.00':'fw13x','13.02':'fw13x','13.04':'fw13x','13.50':'fw13x','13.52':'fw13x'};
+function getFW(){var m=/PlayStation\s+4[\/\s]+(\d+)\.(\d+)/i.exec(navigator.userAgent||'');if(!m)return null;var a=String(m[1]),b=String(m[2]);if(b.length===1)b=b+'0';if(b.length>2)b=b.slice(0,2);return a+'.'+b;}
+var btn=document.getElementById('start'),msg=document.getElementById('msg'),fw=getFW();
+function ready(){
+ if(!fw){btn.disabled=true;btn.textContent='START GOLDHEN';msg.textContent='PS4 NOT DETECTED';return;}
+ if(!routes[fw]){btn.disabled=true;btn.textContent='START GOLDHEN';msg.textContent='UNSUPPORTED FIRMWARE '+fw;return;}
+ btn.disabled=false;btn.textContent='START GOLDHEN';msg.textContent='FW '+fw+' • OFFLINE READY';
+}
+function fail(){btn.disabled=true;btn.textContent='CACHE ERROR';msg.textContent='KEEP INTERNET ON • CLEAR WEBSITE DATA AND TRY AGAIN';}
+var ac=window.applicationCache;
+if(!ac){fail();}else{
+ try{
+  ac.addEventListener('progress',function(e){btn.disabled=true;if(e&&e.total)msg.textContent='INSTALLING OFFLINE CACHE: '+Math.round((e.loaded/e.total)*100)+'%';else msg.textContent='INSTALLING OFFLINE CACHE...';},false);
+  ac.addEventListener('cached',ready,false);
+  ac.addEventListener('noupdate',ready,false);
+  ac.addEventListener('updateready',function(){try{ac.swapCache();}catch(e){}ready();},false);
+  ac.addEventListener('error',fail,false);
+  if(ac.status===ac.IDLE)ready();else if(ac.status===ac.UPDATEREADY){try{ac.swapCache();}catch(e){}ready();}
+ }catch(e){fail();}
+}
+btn.onclick=function(){if(btn.disabled)return;btn.disabled=true;btn.textContent='LOADING...';location.href=routes[fw]+'/jb.html?go=1';};
+})();
+</script>
+</body></html>
